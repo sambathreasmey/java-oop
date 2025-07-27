@@ -1,5 +1,6 @@
-public class Salary {
+public class StaffSalary {
     private String name;
+    private Integer age;
     private Double tax;
     private Double payroll;
     private Double baseSalary;
@@ -29,4 +30,17 @@ public class Salary {
     public void setBaseSalary(Double baseSalary) {
         this.baseSalary = baseSalary;
     }
+    
+    public Integer getAge() {
+        return age;
+    }
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+    @Override
+    public String toString() {
+        return "StaffSalary [name=" + name + ", age=" + age + ", tax=" + tax + ", payroll=" + payroll + ", baseSalary="
+                + baseSalary + "]";
+    }
+
 }

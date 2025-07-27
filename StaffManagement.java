@@ -1,44 +1,29 @@
+import java.util.ArrayList;
 import java.util.List;
 
-import java.util.ArrayList;
-
-public class Adminitractor {
+public class StaffManagement {
     public static void main(String[] args) {
-        CalculateUtil sum = new CalculateUtil();
-
-        StaffSalary staffSalary = new StaffSalary();
-        staffSalary.setTax(120.0);
-        staffSalary.setBaseSalary(490.0);
-
-        Double balance = sum.payroll(staffSalary, 2.0);
-        System.out.println("Balance ::: " + balance);
-
-        // LIST 
         StaffSalary staff1 = new StaffSalary();
         staff1.setName("Sokha");
         staff1.setTax(12.0);
-        staff1.setBaseSalary(500.0);
+        staff1.setBaseSalary(300.0);
 
         StaffSalary staff2 = new StaffSalary();
         staff2.setName("Bopha");
         staff2.setTax(10.0);
-        staff2.setBaseSalary(750.0);
+        staff2.setBaseSalary(350.0);
         
         StaffSalary staff3 = new StaffSalary();
         staff3.setName("Chanty");
         staff3.setTax(7.0);
-        staff3.setBaseSalary(150.0);
+        staff3.setBaseSalary(650.0);
 
         List<StaffSalary> staffList = new ArrayList<StaffSalary>();
         staffList.add(staff1);
         staffList.add(staff2);
         staffList.add(staff3);
-
+        
         CalculateUtil calculateUtil = new CalculateUtil();
         System.out.println(calculateUtil.sumBaseSalary(staffList));
     }
 }
-
-// reusable 
-// easy to manage
-// follow framework

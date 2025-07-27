@@ -1,10 +1,10 @@
 public class Accounting {
     public static void main(String[] args) {
-        SumAmount sum = new SumAmount();
+        CalculateUtil sum = new CalculateUtil();
 
-        Salary staffSalary = new Salary();
-        staffSalary.tax = 10.0;
-        staffSalary.baseSalary = 500.0;
+        StaffSalary staffSalary = new StaffSalary();
+        staffSalary.setTax(10.0);
+        staffSalary.setBaseSalary(500.0);
 
         Double baseSalary = sum.payroll(staffSalary);
 
